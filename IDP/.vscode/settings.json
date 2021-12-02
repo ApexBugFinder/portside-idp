@@ -1,0 +1,25 @@
+{
+    "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/bin/*/**": true
+  },
+  "sqltools.connections": [
+    {
+      "mssqlOptions": {
+        "appName": "SQLTools",
+        "useUTC": true,
+        "encrypt": true
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 1433,
+      "driver": "MSSQL",
+      "name": "IDP",
+      "database": "RecipeAntUserDB",
+      "username": "sa",
+      "password": "Yukon900"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: "3.4"
+
+services:
+  idp:
+    image: obasi79/portfolio:portfolioIDP
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    volumes:
+      - /home/apexbugfinder/.aspnet/https/:/https/:ro
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:443
+      - 8020:80
+
+    environment:
+      - ASPNETCORE_ENVIRONMENT="Production"
+      - ASPNETCORE_URLS=https://+;http://+
+      - ASPNETCORE_HTTPS_PORT="8000"
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=password
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/identity.pfx
+
