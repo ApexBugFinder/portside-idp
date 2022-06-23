@@ -78,7 +78,7 @@ namespace IDP
 
       services.Configure<ForwardedHeadersOptions>(options => {
         options.ForwardLimit = 2;
-        // options.KnownProxies.Add(IPAddress.Parse("identity.portside.sbs"));
+        // options.KnownProxies.Add(IPAddress.Parse("identity.portside.cyou"));
         options.KnownProxies.Add(IPAddress.Parse("198.211.29.93"));
         // options.KnownProxies.Add(IPAddress.Parse("198.211.29.93:8000"));
         options.ForwardedForHeaderName = "X-Forwarded-For-Identity-Portside";
@@ -111,12 +111,12 @@ namespace IDP
           builder.WithOrigins(
                 // Web API
 
-                "https://identity.portside.sbs", "https://198.211.29.93:8000", // IDP
+                "https://identity.portside.cyou", "https://198.211.29.93:8000", // IDP
 
-                "http://webapi.portside.sbs","https://198.211.29.93:8085", "https://webapi.portside.sbs", "http://198.211.29.93:8086", // WEBAPI
+                "http://webapi.portside.cyou","https://198.211.29.93:8085", "https://webapi.portside.cyou", "http://198.211.29.93:8086", // WEBAPI
 
                 "http://localhost:3000", "https://198.211.29.93",  // FRONT
-                "https://portside.sbs"
+                "https://portside.cyou"
             )
               .AllowAnyOrigin()
               .AllowAnyHeader()
@@ -220,7 +220,7 @@ namespace IDP
       // .AddOpenIdConnect(options => {
       // options.SignInScheme = "Cookies";
 
-      // options.Authority = "https://identity.portside.sbs";
+      // options.Authority = "https://identity.portside.cyou";
       // options.RequireHttpsMetadata = false;
 
       // options.ClientId = "portfoliofront";

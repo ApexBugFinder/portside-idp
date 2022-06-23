@@ -47,7 +47,7 @@ namespace IDP
     {
 
 
-         new Secret("DE:B7:53:C3:AF:09:2F:E1:76:A2:1F:91:FD:E3:39:55:29:77:E8:78")
+         new Secret("F6:F9:6C:64:C4:82:42:6F:1F:0E:16:BA:30:FF:8C:04:A0:BB:BD:9D")
                     {
 
                             Type = IdentityServerConstants.SecretTypes.X509CertificateThumbprint
@@ -68,21 +68,21 @@ namespace IDP
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
                     "portfoliowebapi", "mtls"},
-                RedirectUris = new List<string> { "http://198.211.29.93:3000", "https://198.211.29.93:3000",
-                "https://portside.sbs/#/auth/auth-callback","https://portside.sbs/#/auth/auth-callback/", "https://portside.sbs/#/auth/auth-callback/?",
-                "https://portside.sbs/auth/auth-callback","https://portside.sbs/auth/auth-callback/", "https://portside.sbs/auth/auth-callback/?",
+                RedirectUris = new List<string> { "http://198.211.29.93:3000", "https://198.211.29.93:3000", "https://identity.portside.cyou",
+                "https://portside.cyou/#/auth/auth-callback","https://portside.cyou/#/auth/auth-callback/", "https://portside.cyou/#/auth/auth-callback/?",
+                "https://portside.cyou/auth/auth-callback","https://portside.cyou/auth/auth-callback/", "https://portside.cyou/auth/auth-callback/?",
                 "http://198.211.29.93:3000/auth/auth-callback", "https://198.211.29.93:4200/auth/auth-callback", "https://198.211.29.93:8085"},
                 AllowedCorsOrigins = new List<string> {
                         "https://198.211.29.93",   //Client
-                        "https://portside.sbs",
+                        "https://portside.cyou",
 
 
                         "https://198.211.29.93:8000",     // IDP
-                            "https://identity.portside.sbs",
-                            "http://identity.portside.sbs",
+                            "https://identity.portside.cyou",
+                            "http://identity.portside.cyou",
                         "https://198.211.29.93:8085",   // WEB API
-                        "https://webapi.portside.sbs",
-                        "http://webapi.portside.sbs"
+                        "https://webapi.portside.cyou",
+                        "http://webapi.portside.cyou"
                     },
 
                 AllowAccessTokensViaBrowser = true,
