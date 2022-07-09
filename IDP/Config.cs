@@ -60,27 +60,27 @@ namespace IDP
             {
                 ClientId = "portfoliofront",
                 ClientName = "Portfolio Client",
-                ClientUri = "http://198.211.29.93:3000",
+                ClientUri = "http://23.94.40.225:3000",
 
                 AllowedGrantTypes = GrantTypes.Implicit,
-                PostLogoutRedirectUris = new List<string> { "http://198.211.29.93:3000/" },
+                PostLogoutRedirectUris = new List<string> { "http://23.94.40.225:3000/" },
                 AllowedScopes = new List<string> {
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
                     "portfoliowebapi", "mtls"},
-                RedirectUris = new List<string> { "http://198.211.29.93:3000", "https://198.211.29.93:3000", "https://identity.portside.cyou",
+                RedirectUris = new List<string> { "http://23.94.40.225:3000", "https://23.94.40.225:3000", "https://identity.portside.cyou",
                 "https://portside.cyou/#/auth/auth-callback","https://portside.cyou/#/auth/auth-callback/", "https://portside.cyou/#/auth/auth-callback/?",
                 "https://portside.cyou/auth/auth-callback","https://portside.cyou/auth/auth-callback/", "https://portside.cyou/auth/auth-callback/?",
-                "http://198.211.29.93:3000/auth/auth-callback", "https://198.211.29.93:4200/auth/auth-callback", "https://198.211.29.93:8085"},
+                "http://23.94.40.225:3000/auth/auth-callback", "https://23.94.40.225:4200/auth/auth-callback", "https://23.94.40.225:8085"},
                 AllowedCorsOrigins = new List<string> {
-                        "https://198.211.29.93",   //Client
+                        "https://23.94.40.225",   //Client
                         "https://portside.cyou",
 
 
-                        "https://198.211.29.93:8000",     // IDP
+                        "https://23.94.40.225:8000",     // IDP
                             "https://identity.portside.cyou",
                             "http://identity.portside.cyou",
-                        "https://198.211.29.93:8085",   // WEB API
+                        "https://23.94.40.225:8085",   // WEB API
                         "https://webapi.portside.cyou",
                         "http://webapi.portside.cyou"
                     },

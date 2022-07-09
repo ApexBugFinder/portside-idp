@@ -8286,11 +8286,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/apexbugfinder/portfolio/idp/idp-generic-v1c/IDP/IDP.csproj",
+      "projectUniqueName": "/home/apexbugfinder/portfolio/portsideidp/IDP/IDP.csproj",
       "projectName": "IDP",
-      "projectPath": "/home/apexbugfinder/portfolio/idp/idp-generic-v1c/IDP/IDP.csproj",
+      "projectPath": "/home/apexbugfinder/portfolio/portsideidp/IDP/IDP.csproj",
       "packagesPath": "/home/apexbugfinder/.nuget/packages/",
-      "outputPath": "/home/apexbugfinder/portfolio/idp/idp-generic-v1c/IDP/obj/",
+      "outputPath": "/home/apexbugfinder/portfolio/portsideidp/IDP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/apexbugfinder/.nuget/NuGet/NuGet.Config"
@@ -8402,7 +8402,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/apexbugfinder/.dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

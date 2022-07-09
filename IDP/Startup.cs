@@ -79,8 +79,8 @@ namespace IDP
       services.Configure<ForwardedHeadersOptions>(options => {
         options.ForwardLimit = 2;
         // options.KnownProxies.Add(IPAddress.Parse("identity.portside.cyou"));
-        options.KnownProxies.Add(IPAddress.Parse("198.211.29.93"));
-        // options.KnownProxies.Add(IPAddress.Parse("198.211.29.93:8000"));
+        options.KnownProxies.Add(IPAddress.Parse("23.94.40.225"));
+        // options.KnownProxies.Add(IPAddress.Parse("23.94.40.225:8000"));
         options.ForwardedForHeaderName = "X-Forwarded-For-Identity-Portside";
       });
 
@@ -111,11 +111,11 @@ namespace IDP
           builder.WithOrigins(
                 // Web API
 
-                "https://identity.portside.cyou", "https://198.211.29.93:8000", // IDP
+                "https://identity.portside.cyou", "https://23.94.40.225:8000", // IDP
 
-                "http://webapi.portside.cyou","https://198.211.29.93:8085", "https://webapi.portside.cyou", "http://198.211.29.93:8086", // WEBAPI
+                "http://webapi.portside.cyou","https://23.94.40.225:8085", "https://webapi.portside.cyou", "http://23.94.40.225:8086", // WEBAPI
 
-                "http://localhost:3000", "https://198.211.29.93",  // FRONT
+                "http://localhost:3000", "https://23.94.40.225",  // FRONT
                 "https://portside.cyou"
             )
               .AllowAnyOrigin()
@@ -202,7 +202,7 @@ namespace IDP
       //   JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
       //   services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
       //     .AddJwtBearer(options => {
-      //         options.Authority = "https://198.211.29.93:44004";
+      //         options.Authority = "https://23.94.40.225:44004";
       //         options.Audience  = "portfoliowebapi";
       //         options.RequireHttpsMetadata = false;
       //         options.TokenValidationParameters = new TokenValidationParameters()

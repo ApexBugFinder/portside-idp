@@ -10,7 +10,7 @@ namespace IDP.Services
   public static class Helper
   {
 
-    public static string GetConnectionString = "Server=198.211.29.93,1433; Database = RecipeAntUserDB;User Id = sa;Password = 'Apple&Pie79';MultipleActiveResultSets=true;Persist Security Info=True;";
+    public static string GetConnectionString = "Server=23.94.40.225,1433; Database = RecipeAntUserDB;User Id = sa;Password = 'Apple&Pie79';MultipleActiveResultSets=true;Persist Security Info=True;";
     public static bool VerifyPasswordHash(string password, byte[] storedHash, byte[] storedSalt)
     {
       if (password == null) throw new ArgumentNullException("password");
