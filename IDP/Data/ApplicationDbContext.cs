@@ -9,8 +9,10 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Design;
 using IDP.Services;
 namespace IDP.Data
 {
@@ -351,4 +353,14 @@ private  string connect = Helper.GetConnectionString;
     //     // public DbSet<UserClaim> Claims {get; set;}
     //     // public DbSet<UserLogin> Logins {get; set;}
     // }
+
+
+public class ApplicationDBContextFactory: IDesignTimeDbContextFactory<ApplicationDbContext>
+{
+  public ApplicationDbContext CreateDbContext(string[] args) {
+    var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
+    optionsBuilder.UseSqlServer(Helper.GetConnectionString);
+    return new ApplicationDbContext(optionsBuilder.Options);
+  }
+}
 }
