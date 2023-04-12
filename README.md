@@ -23,6 +23,6 @@ Prefer to handle project, education, and experience edit pages as full pages ins
 Improve flow of site.
 
 ## Future improvements in Beta Version 2
-Extend api to make main background picture changeable
-Extend project to endpoints to save customized styling for each project
-Allow for video content
+1. Extend api to make main background picture changeable
+2. Extend project to endpoints to save customized styling for each project
+3. Allow for video content
